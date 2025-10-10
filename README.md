@@ -15,8 +15,8 @@ Immunostaining was performed to detect the endogenous protein NFkB/p65 before an
 4.	Cell nuclei at the borders of the image or that displayed overexposure in individual channels were filtered out in R prior to further analysis (see Analysis section). 
 
 # Analysis
-1.	Individual channel images and Cellpose nuclear masks were used as input in R to quantify image features in regions corresponding to nuclear masks using the custom function quantNuclei_v01.R [4]. 
-3.	For padFISH-based co-expression analysis at the CXCL cluster: the padFISH_CXCL_Coexpression_analysis_v2.R script was first used to process padFISH data, then the Seurat_CXCL_CoExpression_v4.html script was used for the combined analysis with sequencing data.
+1.	Individual channel images and Cellpose nuclear masks were used as input in R to quantify image features in regions corresponding to nuclear masks using the custom function quantNuclei_v01.R [4] (see IF_Integrated_intensity_v5.R and padFISH_CXCL_Coexpression_analysis_v2.R).
+3.	For padFISH-based co-expression analysis at the CXCL cluster: the padFISH_CXCL_Coexpression_analysis_v2.R script was first used to process padFISH data, then the Seurat_CXCL_CoExpression_v4.html script was used for the combined analysis with sequencing data (see Zenodo repository).
 4. 	For Immunostaining of NFkB/p65, we quantified the density distribution of the signal with IF_Integrated_intensity_v5.R script and the ratios of signal with the IF_CytoNucRatio_v2.R script.
 
 # References 

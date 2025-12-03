@@ -18,7 +18,13 @@ Immunostaining was performed to detect the endogenous protein NFkB/p65 before an
 1.	Individual channel images and Cellpose nuclear as well as calculated cytoplasmic masks were used directly in FIJI or using the quantNuclei function in R to quantify image features (e. g. integrated or mean intensity, area). See see IF_Integrated_intensity_v5.R and padFISH_CXCL_Coexpression_analysis_v2.R for the usage of custom function quantNuclei_v01.R [4]. 
 3.	For padFISH-based co-expression analysis at the CXCL cluster: the padFISH_CXCL_Coexpression_analysis_v2.R script was first used to process padFISH data, then a combined analysis with sequencing data was performed (see Zenodo repository).
 4.  For Immunostaining of NFkB/p65, we quantified the density distribution of the signal with IF_Integrated_intensity_v5.R script and the ratios of signal with the IF_CytoNucRatio_v2.R script.
-5.  For padFISH-based bursting kinetics analysis, the padFISH_BurstingKinetics_v1.R script was used. 
+5.  For padFISH transcriptional bursting analysis, we used the notebook `padFISH_BurstingKinetics_v1.ipynb` containing the Python-based quantification of transcription activation kinetics, including:
+
+- CV mixture model classification of nuclei
+- Fraction active over time (burst frequency proxy) computation
+- Excess signal over time (burst size proxy) computation
+- Visualization
+- `csv` export
 
 # References 
 1.	Gyllborg, D. et al. Hybridization-based in situ sequencing (HybISS) for spatially resolved transcriptomics in human and mouse brain tissue. Nucleic Acids Res 48, e112 (2020)

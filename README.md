@@ -1,5 +1,5 @@
 # ACDC-Microscopy
-Collection of scripts used for Preprocessing and Analysis of padFISH and Immunofluorescence (IF) data sets in the study "Two different chromatin modules regulate proinflammatory gene expression" from Seufert et al. (BioRxiv) (https://doi.org/10.1101/2024.08.03.606159)
+Collection of scripts used for Preprocessing and Analysis of padFISH and Immunofluorescence (IF) data sets in the study "Two different chromatin modules regulate proinflammatory gene expression" from Seufert et al. (Nature Cell Biology) (https://doi.org/10.1038/s41556-025-01819-2)
 
 
 # padFISH - padlock probe-based smFISH
@@ -19,7 +19,6 @@ Immunostaining was performed to detect the endogenous protein NFkB/p65 before an
 3.	For padFISH-based co-expression analysis at the CXCL cluster: the padFISH_CXCL_Coexpression_analysis_v2.R script was first used to process padFISH data, then a combined analysis with sequencing data was performed (see Zenodo repository).
 4.  For Immunostaining of NFkB/p65, we quantified the density distribution of the signal with IF_Integrated_intensity_v5.R script and the ratios of signal with the IF_CytoNucRatio_v2.R script.
 5.  For padFISH transcriptional bursting analysis, we used the notebook `padFISH_BurstingKinetics_v1.ipynb` containing the Python-based quantification of transcription activation kinetics, including:
-
 - CV mixture model classification of nuclei
 - Fraction active over time (burst frequency proxy) computation
 - Excess signal over time (burst size proxy) computation
